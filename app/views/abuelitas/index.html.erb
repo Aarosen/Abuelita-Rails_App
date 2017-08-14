@@ -1,0 +1,15 @@
+<h1>Abuelita Talk</h1>
+
+<div><%= @answer %></div>
+
+<%= form_tag abuelita_path do %>
+  <p>
+  	Habla Nieto!<br>
+    <%= text_field_tag :user_input %>
+  </p>
+ 
+  <p>
+    <%= submit_tag "Search" %>
+  </p>
+<% end %>
+
